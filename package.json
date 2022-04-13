@@ -6,7 +6,7 @@
   "homepage": "https://okirsenko.github.io/art-sites-task",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /art-sites-task/"
   },
   "repository": {
     "type": "git",
