@@ -1,0 +1,38 @@
+.footer {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    padding-top: 50px;
+    padding-bottom: 53px;
+    font-size: 14px;
+    line-height: 1.57;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__mail {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.57;
+}
+.footer-nav__link {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.57;
+    text-decoration: underline;
+}
+.footer-right {
+    display: flex;
+}
+.footer__logo {
+    display: block;
+    width: 36px;
+    height: 38px;
+    margin-right: 10px;
+}
+.developer-link {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.57;
+    text-decoration: underline;
+}

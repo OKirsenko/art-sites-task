@@ -1,0 +1,122 @@
+.section-products {
+    padding-top: 10px;
+    padding-bottom: 200px;
+}
+.wrapper {
+    display: flex;
+    margin-top: 26px;
+}
+.side-nav {
+    width: 200px;
+    padding-right: 22px;
+}
+.side-nav__list {
+    margin-bottom: 110px;
+}     
+.side-nav__item {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.45px;
+    .active {
+        text-decoration: underline;
+    }
+    
+}
+.category__list {
+    margin-left: 20px;
+    .active {
+        text-decoration: underline;
+        color: #010101;
+    }
+}
+.category__item {
+    list-style-type: disc;
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 0.35px;
+}
+.price__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .price__descr {
+        display: block;
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 6px;
+    }
+}
+
+.main-content {
+    width: 780px;
+}
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+}
+.products__item {
+    width: calc(100% / 3 - 15px);
+    background-color: var(--accent-color);
+    padding: 20px 20px 17px 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.products__img {
+    margin: 0 auto;
+}
+.products__wrap {
+    margin-top: 21px;
+}
+.products__descr {
+    font-size: 18px;
+    letter-spacing: 0.45px;
+}
+.price__wrap {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products__price {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.pagination {
+    margin-top: 32px;
+}
+.pagination__list {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.pagination__item {
+    margin-right: 10px;
+    letter-spacing: 7.91px;
+    .active {
+        font-size: 18px;
+        letter-spacing: 10.17px;
+        font-weight: 700;
+    }
+}
+.about-container {
+    border-top: 1px solid var(--secondary-bg-color);
+    padding-top: 28px;
+
+    margin-top: 67px;
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 0.35px;
+    width: calc(100% / 2 - 20px);
+
+}

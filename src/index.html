@@ -58,102 +58,207 @@
       </div>
     </header>
     <main>
+      <section class="section-slider">
+        <div class="slider">
+          <div class="slider__slides">
+            <img src="images/slide-1.png" alt="slide1" class="slider__slide" />
+            <img src="images/slide-2.png" alt="slide2" class="slider__slide" />
+          </div>
+          <a href="" class="slider__arrow slider__arrow_left">
+            <img src="images/slider-left.jpg" alt="" />
+          </a>
+          <a href="" class="slider__arrow slider__arrow_right">
+            <img src="images/slider-right.jpg" alt="" />
+          </a>
+        </div>
+      </section>
       <section class="section-products">
         <div class="container">
           <p class="path">Главная / Каталог / Бытовая техника</p>
-          <aside class="side-nav">
-            <ul class="side-nav__list">
-              <li class="side-nav__item">
-                <a href="" class="side-nav__link">Автомобили</a>
-              </li>
-              <li class="side-nav__item">
-                <a href="" class="side-nav__link">Бытовая техника</a>
-                <ul class="category__list">
-                  <li class="category__item">
-                    <a href="" class="category__link">Микроволновки</a>
-                  </li>
-                  <li class="category__item">
-                    <a href="" class="category__link">Холодильники</a>
-                  </li>
-                  <li class="category__item">
-                    <a href="" class="category__link">Посудомоечные машины</a>
-                  </li>
-                  <li class="category__item">
-                    <a href="" class="category__link">Чайники</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="side-nav__item">
-                <a href="" class="side-nav__link">Мобильная техника</a>
-              </li>
-              <li class="side-nav__item">
-                <a href="" class="side-nav__link">Компьютеры</a>
-              </li>
-              <li class="side-nav__item">
-                <a href="" class="side-nav__link">Одежда</a>
-              </li>
-              <li class="side-nav__item">
-                <a href="" class="side-nav__link">Недвижимость</a>
-              </li>
-            </ul>
-            <div class="price">
-              <a href="" class="price__link">
-                <img src="images/price-logo.png" alt="price" class="price__img" width="97" />
-                <span class="price__descr">Прайс-лист</span>
-              </a>
-            </div>
-          </aside>
-          <ul class="products__list">
-            <li class="products__item">
-              <img src="images/placeholder.jpg" alt="product" class="products__img" width="210" />
-              <div class="products__wrap">
-                <p class="products__descr">Самый клевый чайник, который надо купить!</p>
-                <span class="products__price">1 900 р.</span>
-                <a href="" class="products__link">
-                  <img src="images/buy-img.png" alt="add to basket" />
+          <div class="wrapper">
+            <aside class="side-nav">
+              <ul class="side-nav__list">
+                <li class="side-nav__item">
+                  <a href="" class="side-nav__link">Автомобили</a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="" class="side-nav__link active">Бытовая техника</a>
+                  <ul class="category__list">
+                    <li class="category__item">
+                      <a href="" class="category__link active">Микроволновки</a>
+                    </li>
+                    <li class="category__item">
+                      <a href="" class="category__link">Холодильники</a>
+                    </li>
+                    <li class="category__item">
+                      <a href="" class="category__link">Посудомоечные машины</a>
+                    </li>
+                    <li class="category__item">
+                      <a href="" class="category__link">Чайники</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="side-nav__item">
+                  <a href="" class="side-nav__link">Мобильная техника</a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="" class="side-nav__link">Компьютеры</a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="" class="side-nav__link">Одежда</a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="" class="side-nav__link">Недвижимость</a>
+                </li>
+              </ul>
+              <div class="price">
+                <a href="" class="price__link">
+                  <img src="images/price-logo.png" alt="price" class="price__img" width="97" />
+                  <span class="price__descr">Прайс-лист</span>
                 </a>
               </div>
-            </li>
-          </ul>
-          <div class="pagination">
-            <ul class="pagination__list">
-              <li class="pagination__item">
-                <a href="" class="pagination__link">1</a>
-                <a href="" class="pagination__link">2</a>
-                <a href="" class="pagination__link active">3</a>
-                <a href="" class="pagination__link">4</a>
-                <a href="" class="pagination__link">5</a>
-                <a href="" class="pagination__link">6</a>
-                <a href="" class="pagination__link">7</a>
-              </li>
-            </ul>
+            </aside>
+            <div class="main-content">
+              <ul class="products__list">
+                <li class="products__item">
+                  <img
+                    src="images/placeholder.jpg"
+                    alt="product"
+                    class="products__img"
+                    width="210"
+                  />
+                  <div class="products__wrap">
+                    <p class="products__descr">Самый клевый чайник, который надо купить!</p>
+                    <div class="price__wrap">
+                      <span class="products__price">1 900 р.</span>
+                      <a href="" class="products__link">
+                        <img src="images/buy-img.png" alt="add to basket" />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img
+                    src="images/placeholder.jpg"
+                    alt="product"
+                    class="products__img"
+                    width="210"
+                  />
+                  <div class="products__wrap">
+                    <p class="products__descr">Самый клевый чайник, который надо купить!</p>
+                    <div class="price__wrap">
+                      <span class="products__price">1 900 р.</span>
+                      <a href="" class="products__link">
+                        <img src="images/buy-img.png" alt="add to basket" />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img
+                    src="images/placeholder.jpg"
+                    alt="product"
+                    class="products__img"
+                    width="210"
+                  />
+                  <div class="products__wrap">
+                    <p class="products__descr">Самый клевый чайник, который надо купить!</p>
+                    <div class="price__wrap">
+                      <span class="products__price">1 900 р.</span>
+                      <a href="" class="products__link">
+                        <img src="images/buy-img.png" alt="add to basket" />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img
+                    src="images/placeholder.jpg"
+                    alt="product"
+                    class="products__img"
+                    width="210"
+                  />
+                  <div class="products__wrap">
+                    <p class="products__descr">Самый клевый чайник, который надо купить!</p>
+                    <div class="price__wrap">
+                      <span class="products__price">1 900 р.</span>
+                      <a href="" class="products__link">
+                        <img src="images/buy-img.png" alt="add to basket" />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img
+                    src="images/placeholder.jpg"
+                    alt="product"
+                    class="products__img"
+                    width="210"
+                  />
+                  <div class="products__wrap">
+                    <p class="products__descr">Самый клевый чайник, который надо купить!</p>
+                    <div class="price__wrap">
+                      <span class="products__price">1 900 р.</span>
+                      <a href="" class="products__link">
+                        <img src="images/buy-img.png" alt="add to basket" />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link active">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">4</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">5</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">6</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">7</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="about-container">
+                <ul class="about__list">
+                  <li class="about__item">
+                    Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали
+                    участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя
+                    профессионалами. На данный момент наш коллектив состоит из более чем 30
+                    сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для
+                    этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.
+                  </li>
+                  <li class="about__item">
+                    Одним из основных направлений работ нашей компании является поисковое
+                    продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными
+                    клиентами по более чем 11 000 поисковым запросам. При этом в работе основной
+                    акцент мы делаем на качестве работ, а так же применяем собственные уникальные
+                    разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9
+                    человек под руководством ведущего специалиста, преимущественно работающих в
+                    нашем московском офисе.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="section-about">
-        <div class="container">
-          <ul class="about__list">
-            <li class="about__item">
-              Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в
-              разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами.
-              На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух
-              офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви,
-              ухода молодости, угасания души.
-            </li>
-            <li class="about__item">
-              Одним из основных направлений работ нашей компании является поисковое продвижение
-              сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более
-              чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве
-              работ, а так же применяем собственные уникальные разработки в области SEO продвижения.
-              На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста,
-              преимущественно работающих в нашем московском офисе.
-            </li>
-          </ul>
-        </div>
-      </section>
+      <section class="section-about"></section>
     </main>
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer-container">
         <div class="footer-left">
           <p class="footer__copyright">© 2012–2013 ЗАО «Компания»</p>
           <a href="mailto:info@name.ru" class="footer__mail">info@name.ru</a>
@@ -178,9 +283,11 @@
           </ul>
         </div>
         <div class="footer-right">
+          <img src="images/footer-logo.png" alt="art-sites logo" width="36" class="footer__logo" />
           <p class="developer">
             <a href="" class="developer-link">Разработка сайта</a>
-            — компания «Art-Sites»
+            — <br />
+            компания «Art-Sites»
           </p>
         </div>
       </div>
