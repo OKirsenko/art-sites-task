@@ -29,7 +29,7 @@
           <div class="contacts">
             <a href="tel:+74997777777" class="contacts__link">+7(499) 777-77-77</a>
             <a href="tel:+74997777777" class="contacts__link">+7(499) 777-77-77</a>
-            <button class="contacts__btn">Обратная связь</button>
+            <button class="contacts__btn js-modal-open">Обратная связь</button>
           </div>
         </div>
       </div>
@@ -292,6 +292,23 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop js-modal is-hidden">
+      <div class="modal">
+        <button class="modal-close js-modal-close">X</button>
+        <h3 class="modal__header">Обратная связь</h3>
+        <form class="modal__form js-form">
+          <label for="name" class="modal__label">Ваше имя *</label>
+          <input type="text" id="name" class="modal__input" />
+          <label for="phone" class="modal__label">Телефон *</label>
+          <input type="text" id="phone" class="modal__input" />
+          <label for="email" class="modal__label">Email *</label>
+          <input type="text" id="email" class="modal__input" />
+          <label for="comment" class="modal__label">Сообщение</label>
+          <textarea name="comment" id="comment" class="modal__text"></textarea>
+          <button class="modal__form_btn">Отправить</button>
+        </form>
+      </div>
+    </div>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
