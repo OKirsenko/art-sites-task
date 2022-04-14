@@ -9,6 +9,10 @@
 .side-nav {
     width: 200px;
     padding-right: 22px;
+    display: none;
+    @media screen and (min-width: 1000px) {
+        display: block;
+    }
 }
 .side-nav__list {
     margin-bottom: 110px;
@@ -46,9 +50,28 @@
         margin-top: 6px;
     }
 }
+.container__products {
+    position: relative;
+}
+.menu__btn {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}
 
 .main-content {
-    width: 780px;
+    width: 100%;
+    @media screen and (min-width: 1000px) {
+        width: 780px;
+    }
 }
 .products__list {
     display: flex;
@@ -56,11 +79,17 @@
     margin-right: -15px;
 }
 .products__item {
-    width: calc(100% / 3 - 15px);
+    width: 100%;
     background-color: var(--accent-color);
     padding: 20px 20px 17px 20px;
     margin-right: 15px;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 15px);
+    }
+    @media screen and (min-width: 1000px) {
+        width: calc(100% / 3 - 15px);
+    }
 }
 .products__img {
     margin: 0 auto;
@@ -109,14 +138,71 @@
 }
 
 .about__list {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .about__item {
     font-size: 14px;
     line-height: 1.57;
     letter-spacing: 0.35px;
-    width: calc(100% / 2 - 20px);
+    // width: calc(100% / 2 - 20px);
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 20px);
+    }
+}
 
+// mobile menu
+.menu__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 48px 40px;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__container.is-open {
+    transform: translateX(0);
+}
+
+
+.mobile-btn {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+}
+.menu__list {
+ width: 200px;
+ margin: 0 auto; 
+}
+.menu-nav__item {
+    font-size: 20px;
+    line-height: 1.67;
+    letter-spacing: 0.45px;
+    
+    
+    .active {
+        text-decoration: underline;
+    }
+}
+.menu-price {
+    margin: 0 auto;
 }

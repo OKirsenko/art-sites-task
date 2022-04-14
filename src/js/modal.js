@@ -14,6 +14,7 @@ const message = 'Поле обязательно для заполнения';
 function toggleModal() {
   refs.formEl.reset();
   refs.modal.classList.toggle('is-hidden');
+  document.body.classList.toggle('blocked-body');
 }
 
 function onSubmit(e) {

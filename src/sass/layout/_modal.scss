@@ -20,8 +20,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 35px 63px 26px 63px;
-    width: 466px;
+    padding: 20px;
+    width: 100%;
+    @media screen and (min-width: 480px) {
+        width: 466px;
+        padding: 35px 63px 26px 63px;
+    }
 }
 
 .is-hidden {
@@ -36,8 +40,12 @@
     border: none;
     color: var(--secondary-text-color);
     position: absolute;
-    top: -27px;
-    right: -27px;
+    top: 0;
+    right: 0;
+    @media screen and (min-width: 768px) {
+        top: -27px;
+        right: -27px;
+    }
 }
 .modal__header {
     font-size: 24px;
@@ -82,7 +90,14 @@
     margin: 0 auto;
 }
 
+.modal__btn_icon {
+    fill: #ffffff;
+}
 .modal__input_error {
     background-color: #e46a6a;
     border: 1px solid #ff8383;
+}
+
+.blocked-body {
+    overflow: hidden;
 }

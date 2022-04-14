@@ -7,8 +7,20 @@
     line-height: 1.57;
 }
 .footer-container {
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+
+   align-items: center;
+    @media screen and (min-width: 480px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.footer-left, .footer-center {
+    margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
+        margin-bottom: 0;
+    }
 }
 .footer__mail {
     color: var(--secondary-text-color);

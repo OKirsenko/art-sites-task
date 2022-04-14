@@ -1,10 +1,4 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
 
-// Стили для файла с примером HTML-фрагмента
-// @import './example';
 @import './base/reset';
 @import './base/common';
 @import './base/container';
@@ -12,7 +6,6 @@
 @import './base/fonts';
 @import './layout/header';
 @import './layout/products'; 
-@import './layout/about'; 
 @import './layout/footer'; 
 @import './layout/slider'; 
 @import './layout/modal'; 
